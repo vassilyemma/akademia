@@ -8,7 +8,8 @@
  2.1 run isort tool
  2.1 run flake8 tool
  2.1 run black tool
-FOLDERS AND FUNCTIONALITY
+
+FOLDERS AND THEIR FUNCTIONALITY
 
 1.reports: store local reports
 2.tests: folders for modules
