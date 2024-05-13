@@ -1,0 +1,7 @@
+# libraries
+pytest==8.2.0
+
+# code format
+isort==5.13
+flake8==7.0.0
+black==24.4.2
