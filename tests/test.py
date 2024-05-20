@@ -1,19 +1,17 @@
-# test_math_functions.py
+def test_github_login(github_ui_app):
+    """
+    Summary: Negative Test for Login 
+    steps:
+        1. Navigate to login page
+        2. Enter wrong creds
+        3. Click login/signin button
 
-def add(x, y):
-    return x + y
+    Expected result:
+        Error saying "Incorrect username or password." appeared
+    """
 
-def subtract(x, y):
-    return x - y
+    # Enter wrong credential 
+    github_ui_app.try_login("your_username", "your_password")
 
-def test_addition():
-    assert add(3, 5) == 8
-    assert add(-1, 1) == 0
-
-def test_subtraction():
-    assert subtract(5, 3) == 2
-    assert subtract(10, 7) == 3
-
-# This function will not be considered as a test case by pytest
-def helper_function():
-    pass
+    # Expected result
+    assert github_ui_app.login_page.check_wrong_creds_message()
