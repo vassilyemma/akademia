@@ -11,7 +11,7 @@ def test_github_login(github_ui_app):
     """
 
     # Enter wrong credential 
-    github_ui_app.try_login("your_username", "your_password")
+    github_ui_app.try_login(username = 'your_username', password = 'your_password')
 
     # Expected result
     assert github_ui_app.login_page.check_wrong_creds_message()
