@@ -15,3 +15,4 @@ def test_github_login(github_ui_app):
 
     # Expected result
     assert github_ui_app.login_page.check_wrong_creds_message()
+    
